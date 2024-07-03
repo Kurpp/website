@@ -58,7 +58,7 @@ export default function Home() {
   }, [data?.data.activities]);
 
   return (
-    <main className="text-cwhite bg-cblack-100 h-screen">
+    <main className="text-cwhite bg-cblack-100 h-dvh">
       <div className="flex justify-center items-center h-full flex-col gap-2">
         <section className="flex flex-col gap-3 bg-cblack-200 p-4 rounded max-w-[45rem] w-[22rem] md:w-[45rem]">
           {/* Header */}
