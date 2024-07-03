@@ -64,10 +64,10 @@ export default function Home() {
           {/* Header */}
           <section>
             <h1 className="text-3xl font-medium">
-              Hey, I'm <span className="text-cblue">Gilly!</span> 👋
+              Hey, I&apos;m <span className="text-cblue">Gilly!</span> 👋
             </h1>
             <p>
-              Also known as Kurp, I'm a highschool senior in Jamaica who likes
+              Also known as Kurp, I&apos;m a highschool senior in Jamaica who likes
               to code in my free time.
             </p>
           </section>
@@ -78,15 +78,15 @@ export default function Home() {
           <section className="flex flex-col">
             <h1 className="text-xl">Right now...</h1>
             {isLoading && <p>Loading...</p>}
-            {error && <p>Couldn't fetch data!</p>}
+            {error && <p>Couldn&apos;t fetch data!</p>}
             {data && (
               <ul className="list-disc list-inside">
-                <li>I'm {discord_status[data!.data.discord_status]}</li>
+                <li>I&apos;m {discord_status[data!.data.discord_status]}</li>
                 {data?.data.activities?.map((activity) => {
                   if (activity.id === "65206c178aacee48") {
                     return (
                       <li key={activity.id}>
-                        I'm listening to{" "}
+                        I&apos;m listening to{" "}
                         <span style={{ color: rgbToHex(...musicColor) }}>
                           {activity.details}
                         </span>{" "}
@@ -99,7 +99,7 @@ export default function Home() {
                   if (activity.id === "9012e87075717b0a") {
                     return (
                       <li key={activity.id}>
-                        I'm{" "}
+                        I&apos;m{" "}
                         {activity.state?.split(" ")[1] ? (
                           <>
                             working on{" "}
@@ -192,7 +192,7 @@ export default function Home() {
                   <h1 className="text-lg">kurp.dev</h1>
                   <p className="text-sm">
                     My personal website! <br />
-                    It's the first website I've made and the one you are on
+                    It&apos;s the first website I&apos;ve made and the one you are on
                     right now.
                   </p>
                 </div>
@@ -216,7 +216,7 @@ export default function Home() {
                   <h1 className="text-lg">Coming soon!</h1>
                   {/* <p className="text-sm">
                     My personal website! <br />
-                    It's the first website I've made and the one you are on
+                    It&apos;s the first website I&apos;ve made and the one you are on
                     right now.
                   </p> */}
                 </div>
