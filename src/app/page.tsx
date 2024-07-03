@@ -83,7 +83,7 @@ export default function Home() {
               <ul className="list-disc list-inside">
                 <li>I&apos;m {discord_status[data!.data.discord_status]}</li>
                 {data?.data.activities?.map((activity) => {
-                  if (activity.id === "65206c178aacee48") {
+                  if (activity.name.toLowerCase() === "apple music") {
                     return (
                       <li key={activity.id}>
                         I&apos;m listening to{" "}
@@ -96,7 +96,7 @@ export default function Home() {
                     );
                   }
 
-                  if (activity.id === "9012e87075717b0a") {
+                  if (activity.name.toLowerCase() === "visual studio code") {
                     return (
                       <li key={activity.id}>
                         I&apos;m{" "}
