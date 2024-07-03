@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <main className="text-cwhite bg-cblack-100 h-screen">
       <div className="flex justify-center items-center h-full flex-col gap-2">
-        <section className="flex flex-col gap-3 bg-cblack-200 p-4 rounded max-w-[45rem] w-[45rem]">
+        <section className="flex flex-col gap-3 bg-cblack-200 p-4 rounded max-w-[45rem] w-[22rem] md:w-[45rem]">
           {/* Header */}
           <section>
             <h1 className="text-3xl font-medium">
@@ -173,7 +173,7 @@ export default function Home() {
           </section>
         </section>
 
-        <section className="flex flex-col gap-3 bg-cblack-200 p-4 rounded max-w-[45rem] w-[45rem]">
+        <section className="flex flex-col gap-3 bg-cblack-200 p-4 rounded max-w-[45rem] w-[22rem] md:w-[45rem]">
           {/* Header */}
           <section>
             <h1 className="text-2xl font-medium">My Projects!</h1>
@@ -182,7 +182,7 @@ export default function Home() {
 
           <div className="bg-[#474747] h-0.5" />
 
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid md:grid-cols-2 gap-2">
             <Link
               href="https://github.com/Kurpp/website"
               className="bg-[#545A63] rounded p-2 border-solid border-cgrey border-2"
