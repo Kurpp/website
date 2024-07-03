@@ -184,7 +184,7 @@ export default function Home() {
 
           <div className="grid grid-cols-2 gap-2">
             <Link
-              href="/"
+              href="https://github.com/Kurpp/website"
               className="bg-[#545A63] rounded p-2 border-solid border-cgrey border-2"
             >
               <div className="flex justify-between">
