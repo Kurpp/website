@@ -31,7 +31,7 @@ export default function Home() {
     const activities = data?.data.activities;
 
     activities?.map(async (activity) => {
-      if (activity.id === "65206c178aacee48") {
+      if (activity.name.toLowerCase() === "apple music") {
         try {
           let colorThief = new ColorThief();
           const img = new Image();
