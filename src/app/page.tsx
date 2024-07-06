@@ -82,7 +82,7 @@ export default function Home() {
             {data && (
               <ul className="list-disc list-inside">
                 <li>I&apos;m {discord_status[data!.data.discord_status]}</li>
-                {data?.data.activities?.map((activity) => {
+                {data?.data.activities?.sort((a, b) => a.name.localeCompare(b.name))?.map((activity) => {
                   if (activity.name.toLowerCase() === "apple music") {
                     return (
                       <li key={activity.id}>
